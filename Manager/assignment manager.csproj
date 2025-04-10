@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F253C43E-AD68-4C40-9306-1CD85359F503}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IOOP_Assignment</RootNamespace>
+    <AssemblyName>assignment manager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InformationProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationProfile.Designer.cs">
+      <DependentUpon>InformationProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerProfile.cs" />
+    <Compile Include="MenuItems.cs" />
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Reservation.Designer.cs">
+      <DependentUpon>Add Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Reservation.Designer.cs">
+      <DependentUpon>Edit Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Reservation.Designer.cs">
+      <DependentUpon>View Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteReservation.Designer.cs">
+      <DependentUpon>DeleteReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerDashboard.Designer.cs">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfileManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfileManager.Designer.cs">
+      <DependentUpon>UpdateProfileManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOptions.Designer.cs">
+      <DependentUpon>MenuOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllItem.Designer.cs">
+      <DependentUpon>ViewAllItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMenu.Designer.cs">
+      <DependentUpon>ViewMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMenu.Designer.cs">
+      <DependentUpon>EditMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteItem.Designer.cs">
+      <DependentUpon>DeleteItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationMenu.Designer.cs">
+      <DependentUpon>ReservationMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.cs" />
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Reservation.resx">
+      <DependentUpon>Add Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Reservation.resx">
+      <DependentUpon>Edit Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationProfile.resx">
+      <DependentUpon>InformationProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Reservation.resx">
+      <DependentUpon>View Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteReservation.resx">
+      <DependentUpon>DeleteReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerDashboard.resx">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfileManager.resx">
+      <DependentUpon>UpdateProfileManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuOptions.resx">
+      <DependentUpon>MenuOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllItem.resx">
+      <DependentUpon>ViewAllItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMenu.resx">
+      <DependentUpon>ViewMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMenu.resx">
+      <DependentUpon>EditMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteItem.resx">
+      <DependentUpon>DeleteItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationMenu.resx">
+      <DependentUpon>ReservationMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platehehe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurantp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platehehe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurantp1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nasi lemak 4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nasi lemak 41.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-04-30 at 01.05.00_e5da92b0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-04-30 at 01.05.00_f6648abe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-04-30 at 01.05.00_0451b85f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-04-30 at 01.05.00_0451b85f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\IOOPAssignment.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IOOPAssignment_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>IOOPAssignment.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
